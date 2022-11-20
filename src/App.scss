@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "IRSansBold";
+    src: url("./assets/fonts/iran-sans/IRANSans_Bold.ttf");
+}
+
+@font-face {
+    font-family: "IRSansLight";
+    src: url("./assets/fonts/iran-sans/IRANSans_Light.ttf");
+}
+
+@font-face {
+    font-family: "IRSansMedium";
+    src: url("./assets/fonts/iran-sans/IRANSans_Medium.ttf");
+}
+
+@font-face {
+    font-family: "IRSansNumber";
+    src: url("./assets/fonts/iran-sans/IRANSansWeb(FaNum).ttf");
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    // overflow: hidden;
+}
+
+#root {
+    background: #F1F1F1;
+    position: relative;
+    width: calc(100% - 45px);
+    max-width: 363px;
+    margin: auto;
+    padding: 16px 30px 20px;
+    height: auto;
+    min-height: calc(100% - 36px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.227);
+    @media screen and (max-width: 450px) {
+        width: calc(100% - 20px);
+        max-width: none;
+        padding: 16px 10px 20px;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+p,
+span,
+label,
+button {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #ffffff00;
+    border: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    font-family: IRSansLight;
+}
+
+img {
+    font-size: 10px !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, red 600000s 0s;
+}
+
+.rmdp-container {
+    width: calc(100% - 100px);
+}

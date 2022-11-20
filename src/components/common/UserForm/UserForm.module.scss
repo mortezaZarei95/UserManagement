@@ -1,0 +1,69 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    * {
+        direction: ltr;
+    }
+    .inputWrapper {
+        position: relative;
+        display: flex;
+        margin-bottom: 20px;
+        label {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 35px;
+            color: #747474;
+            width: 100px;
+        }
+        input {
+            width: calc(100% - 100px);
+            height: 28px;
+            background: #FFFFFF;
+            border: 1px solid #CECECE;
+            border-radius: 5px;
+        }
+        .ErrText {
+            color: red;
+            font-weight: 600;
+            letter-spacing: .5px;
+            font-size: 9px;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+        input[type=file] {
+            display: none;
+        }
+        .fileLabel {
+            width: fit-content;
+            display: flex;
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 35px;
+                color: #747474;
+                width: 100px;
+            }
+        }
+        img {
+            border-radius: 2px 2px 7px 7px;
+            width: 100px;
+            height: 130px;
+        }
+    }
+    .datePickerWrapper {
+        width: 100%;
+        label {
+            width: 100px;
+        }
+        input {
+            height: 28px;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

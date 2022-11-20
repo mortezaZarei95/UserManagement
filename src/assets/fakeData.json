@@ -1,0 +1,33 @@
+{
+    "userList": [{
+            "fName": "John",
+            "lName": "Stewart",
+            "birthDate": 1655410002214,
+            "id": "4980011111",
+            "address": "No. 58 Goldensmith St,London,U.K",
+            "mobileNumber": "0980011111",
+            "avatar": null,
+            "checked": { "list": [], "state": false }
+        },
+        {
+            "fName": "Jack",
+            "lName": "Stewart",
+            "birthDate": 1655410002214,
+            "id": "4980011112",
+            "address": "London,U.K",
+            "mobileNumber": "0980011112",
+            "avatar": null,
+            "checked": { "list": [], "state": false }
+        },
+        {
+            "fName": "Natalia",
+            "lName": "Gomez",
+            "birthDate": 1655410002214,
+            "id": "8463830885",
+            "address": "No. 58 Goldensmith St,London,U.K",
+            "mobileNumber": "0983830885",
+            "avatar": null,
+            "checked": { "list": [], "state": false }
+        }
+    ]
+}

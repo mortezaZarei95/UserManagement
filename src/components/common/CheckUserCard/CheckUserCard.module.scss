@@ -1,0 +1,103 @@
+.cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    direction: ltr;
+    margin-top: 28px;
+    .labelWrapper {
+        span {
+            width: 110px;
+            text-align: left;
+            direction: ltr;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #747474;
+        }
+        p {
+            font-style: normal;
+            font-weight: 700;
+            text-align: left;
+            font-size: 12px;
+            line-height: 20px;
+            color: #747474;
+        }
+        .avatar {
+            position: relative;
+            top: -20px;
+            left: -25px;
+            width: 102px;
+            height: 129px;
+            border-radius: 5px;
+        }
+    }
+    div {
+        display: flex;
+    }
+    .btnWrapper {
+        .acceptBTN {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            .checkmark {
+                background: #0b7b1e;
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                border-radius: 50%;
+            }
+            .checkmark::after {
+                content: "";
+                position: relative;
+                top: 4px;
+                left: -2px;
+                display: block;
+                width: 8px;
+                height: 3px;
+                border-right: 2px solid #ffffff;
+                border-top: 2px solid #ffffff;
+                border-radius: 1px;
+                transform: rotate(135deg);
+            }
+        }
+        .rejectBTN {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+            .checkmark {
+                background: #000000;
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                border-radius: 50%;
+                transform: rotate(45deg);
+            }
+            .checkmark::after {
+                content: "+";
+                font-weight: 500;
+                color: #ffffff;
+                position: relative;
+                // top: -2.5px;
+                line-height: 19px;
+                left: 0px;
+                display: block;
+                border-radius: 1px;
+            }
+        }
+    }
+    &:last-child {
+        margin-top: 65px;
+    }
+}

@@ -1,0 +1,58 @@
+$gray: #989898;
+.label {
+    width: 100%;
+    height: 16px;
+    display: block;
+    position: relative;
+    font-size: 13px;
+    line-height: 21px;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    p {
+        font-size: 13px;
+        text-align: right;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        box-sizing: border-box;
+        transition: 0.5s;
+        background: #FFFFFF;
+        border: 0.5px solid #757272;
+        border-radius: 3px;
+    }
+    /* On mouse-over, add a grey background color */
+    &:hover input~.checkmark {
+        border-color: $gray;
+    }
+    /* When the checkbox is checked, add a blue background */
+    input:checked~.checkmark {
+        &::after {
+            content: "";
+            position: relative;
+            top: 3px;
+            left: 0px;
+            display: block;
+            width: 9px;
+            height: 3px;
+            border-right: 3px solid $gray;
+            border-top: 3px solid $gray;
+            border-radius: 2px;
+            transform: rotate(135deg);
+        }
+    }
+}
